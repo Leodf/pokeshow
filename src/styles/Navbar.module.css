@@ -5,13 +5,14 @@
     padding: 1em 1.2em;
     margin-bottom: 2em;
     background-color: #333;
-    color: #fff;
 }
 
-.logo{
+.logo {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    color: #fff;
 }
 
 .logo h1 {

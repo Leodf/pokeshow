@@ -6,7 +6,7 @@ import styles from '../styles/Navbar.module.css'
 const Navbar = () => {
   return (
     <nav className={styles.navbar}>
-        <div className={styles.logo}>
+        <Link href="/" className={styles.logo}>
             <Image 
                 src="/images/pokeball.png"
                 width="30"
@@ -14,7 +14,7 @@ const Navbar = () => {
                 alt="Pokeshow"
             />
             <h1>Pokeshow</h1>
-        </div>
+        </Link>
         <ul className={styles.link_items}>
             <li>
                 <Link href="/">
