@@ -1,8 +1,20 @@
 import React from 'react'
+import Navbar from './Navbar'
+import Footer from './Footer'
 
-const Layout = () => {
+import Head from 'next/head'
+
+const Layout = ({children}) => {
   return (
-    <div>Layout</div>
+    <>
+    <Head>
+        <link rel='shortcut icon' href='/images/favicon.ico' />
+        <title>Pokeshow</title>
+    </Head>
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
+    </>
   )
 }
 
