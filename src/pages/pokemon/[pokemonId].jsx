@@ -41,6 +41,7 @@ const Pokemon = ({ pokemon }) => {
             width="200"
             height="200"
             alt={pokemon.name}
+            className={styles.pokemon_image}
         />
         <div>
             <h3>Número:</h3>
