@@ -1,5 +1,6 @@
 
 import styles from '../styles/Home.module.css'
+import Image from 'next/image'
 
 import React from 'react'
 
@@ -23,14 +24,22 @@ export async function getStaticProps() {
 
 const index = ({ pokemons }) => {
   return (
-    <div>
-      <h1>Pokeshow</h1>
-      <ul>
+    <>
+      <div className={styles.title_container}>
+        <h1 className={styles.title}>Poke<span>show</span></h1>
+        <Image 
+          src="/images/pokeball.png"
+          width="50"
+          height="50"
+          alt='Pokeshow'
+        />
+      </div>
+      <div className={styles.pokemon_container}>
         {pokemons.map((pokemon) => (
-          <li key={pokemon.id}>{pokemon.name}</li>
+          <p key={pokemon.id}>{pokemon.name}</p>
         ))}
-      </ul>
-    </div>
+      </div>
+    </>
   )
 }
 
