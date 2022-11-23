@@ -3,6 +3,8 @@ import styles from '../styles/Home.module.css'
 import Image from 'next/image'
 import Card from '../components/Card'
 
+
+
 export async function getStaticProps() {
   const maxPokemons = 251
   const api = 'https://pokeapi.co/api/v2/pokemon/'
